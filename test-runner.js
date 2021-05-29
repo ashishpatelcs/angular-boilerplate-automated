@@ -3,7 +3,7 @@ const fs = require('fs');
 
 try {
     const skaasJson = JSON.parse(fs.readFileSync('skaas.json'));
-    shell.exec(skaasJson['test_command']);
+    shell.exec('ng test --watch=false --browsers=ChromeHeadless');
 
     testResults = JSON.parse(fs.readFileSync('karma-result.json'));
     testResults = testResults['browsers'][0]['results'];

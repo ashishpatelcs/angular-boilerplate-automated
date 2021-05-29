@@ -5,6 +5,6 @@
     "readonly_files": [
         "**/src/test"
     ],
-    "test_command": "ng test --watch=false --browsers=ChromeHeadless",
+    "test_command": "node test-runner.js",
     "test_output": "test-result.json"
 }
