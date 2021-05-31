@@ -68,7 +68,9 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "angular-boiletplate:build"
+            "browserTarget": "angular-boiletplate:build",
+            "host": "0.0.0.0",
+            "disableHostCheck": true
           },
           "configurations": {
             "production": {
